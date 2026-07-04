@@ -42,6 +42,24 @@ body {
   outline: 3px solid #000;
 }
 
+.hero-image {
+  margin: 2rem 0 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.hero-image figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 a {
   color: var(--link);
   text-decoration-thickness: .12em;
