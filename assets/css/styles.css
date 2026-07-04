@@ -66,10 +66,22 @@ button:focus {
 }
 
 .site-name {
+  display: inline-block;
   margin: 0;
   padding: 1rem 0;
+  color: #fff;
   font-size: 1.35rem;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.site-name:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.site-name:visited {
+  color: #fff;
 }
 
 .phase-banner {
@@ -229,13 +241,18 @@ li {
   font-size: 1.15rem;
 }
 
-.student-voice-label {
-  font-weight: 800;
-  margin-bottom: .25rem;
-}
-
 .student-voice blockquote {
   margin: 0;
+}
+
+.student-voice blockquote p {
+  margin-bottom: .5rem;
+}
+
+.student-voice figcaption {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--muted);
 }
 
 .plain-list li {
