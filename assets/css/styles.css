@@ -65,7 +65,9 @@ button:focus {
   border-bottom: 8px solid var(--purple-dark);
 }
 
-.site-name {
+/* Header link: high contrast white on purple.
+   This prevents the general blue link colour from causing a WAVE contrast error. */
+.site-header .site-name {
   display: inline-block;
   margin: 0;
   padding: 1rem 0;
@@ -75,13 +77,21 @@ button:focus {
   text-decoration: none;
 }
 
-.site-name:hover {
+.site-header .site-name:visited {
+  color: #fff;
+}
+
+.site-header .site-name:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-.site-name:visited {
-  color: #fff;
+.site-header .site-name:focus {
+  color: #0b0c0c;
+  background-color: var(--focus);
+  outline: 3px solid var(--focus);
+  outline-offset: 0;
+  box-shadow: 0 4px #0b0c0c;
 }
 
 .phase-banner {
@@ -96,6 +106,7 @@ button:focus {
   color: #fff;
   padding: .15rem .5rem;
   margin-right: .5rem;
+  font-weight: 700;
 }
 
 .hero {
@@ -234,6 +245,13 @@ li {
   margin-top: 0;
 }
 
+/* Student voice quote.
+   Recommended HTML:
+   <figure class="student-voice">
+     <blockquote><p>Quote text</p></blockquote>
+     <figcaption>Student voice</figcaption>
+   </figure>
+*/
 .student-voice {
   border-left: 8px solid var(--purple);
   padding: .75rem 0 .75rem 1rem;
@@ -276,6 +294,14 @@ li {
     margin-bottom: 2.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border);
+  }
+
+  .contact-item {
+    display: block;
+  }
+
+  .contact-item h3 {
+    margin-bottom: .5rem;
   }
 }
 
