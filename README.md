@@ -1,6 +1,6 @@
 # The Unofficial Disability Guide to Trinity College Dublin
 
-The Unofficial Disability Guide to Trinity College Dublin is a student-facing guide created by students with disabilities, for students with disabilities.
+The Unofficial Disability Guide to Trinity is a student-facing guide created by students with disabilities, for students with disabilities.
 
 It brings together practical information, student knowledge, lived experience and links to support for disabled and neurodivergent students at Trinity College Dublin.
 
