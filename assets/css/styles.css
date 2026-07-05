@@ -176,6 +176,26 @@ button:focus {
   margin-top: 1.5rem;
 }
 
+/* Feeback banner */
+.feedback-qr {
+  margin: 1.5rem 0;
+  max-width: 260px;
+}
+
+.feedback-qr img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+
+.feedback-qr figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 .phase-banner {
   border-bottom: 1px solid var(--border);
   padding: .75rem 0;
