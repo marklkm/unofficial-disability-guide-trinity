@@ -8,4 +8,4 @@ The guide is designed to help students know where to start, what to ask, and whe
 
 This is a living guide shaped by student experience, disability community, accessibility, belonging and the belief that disabled students should not have to search alone for clear information.
 
-Support. Belonging. Clear information. You are not alone. <3
+Support. Belonging. Clear information. You are not alone.
