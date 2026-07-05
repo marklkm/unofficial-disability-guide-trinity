@@ -112,6 +112,25 @@ button:focus {
   box-shadow: 0 4px #0b0c0c;
 }
 
+/* Disability Fact graphic */
+.fact-graphic {
+  margin: 1.5rem 0;
+}
+
+.fact-graphic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+
+.fact-graphic figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 /* Featured story section */
 .featured-heading {
   margin-bottom: 1.25rem;
