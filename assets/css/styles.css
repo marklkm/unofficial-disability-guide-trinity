@@ -138,7 +138,7 @@ button:focus {
 
 .featured-heading .section-label {
   display: block;
-  color: var(--muted);
+  color: #8b2498;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.3;
