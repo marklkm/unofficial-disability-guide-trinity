@@ -112,6 +112,45 @@ button:focus {
   box-shadow: 0 4px #0b0c0c;
 }
 
+/* Featured story section */
+.section-label {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
+.featured-intro {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 760px;
+}
+
+.featured-toggle {
+  border: 2px solid var(--text);
+  border-radius: 0;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.featured-collapse {
+  margin-top: 1.5rem;
+}
+
+.featured-story-text {
+  border-left: 8px solid var(--purple);
+  padding-left: 1rem;
+}
+
+.featured-quote {
+  background: var(--light);
+  border-left: 8px solid var(--purple);
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
 .phase-banner {
   border-bottom: 1px solid var(--border);
   padding: .75rem 0;
