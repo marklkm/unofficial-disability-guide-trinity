@@ -379,6 +379,30 @@ li {
   margin-bottom: .85rem;
 }
 
+/* Back to top button */
+.back-to-top {
+  margin: 2rem 0;
+}
+
+.back-to-top .btn {
+  border: 2px solid var(--text);
+  border-radius: 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-to-top .btn:hover {
+  background: var(--text);
+  color: #fff;
+}
+
+.back-to-top .btn:focus {
+  color: #0b0c0c;
+  background-color: var(--focus);
+  outline: 3px solid var(--focus);
+  outline-offset: 0;
+  box-shadow: 0 4px #0b0c0c;
+}
 .site-footer {
   background: var(--light);
   border-top: 1px solid var(--border);
