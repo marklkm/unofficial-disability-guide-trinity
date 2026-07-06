@@ -556,3 +556,37 @@ li {
 .example-message p {
   margin-bottom: 0;
 }
+
+/* Campus pharmacy section */
+.campus-pharmacy-accordion {
+  margin: 1.5rem 0;
+}
+
+.campus-pharmacy-accordion .accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+
+.campus-pharmacy-accordion .accordion-button {
+  color: var(--text);
+  background: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 0;
+}
+
+.campus-pharmacy-accordion .accordion-button:not(.collapsed) {
+  color: var(--text);
+  background: var(--light);
+  box-shadow: none;
+}
+
+.campus-pharmacy-accordion .accordion-button:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 0;
+  box-shadow: 0 -2px var(--focus), 0 4px #0b0c0c;
+}
+
+.campus-pharmacy-accordion .accordion-body {
+  padding: 1.25rem;
+}
