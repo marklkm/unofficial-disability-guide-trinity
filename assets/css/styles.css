@@ -442,3 +442,63 @@ li {
     scroll-behavior: auto !important;
   }
 }
+
+/* Header size fix: keep the top banner compact and separate from the page title */
+.site-header {
+  background: var(--purple);
+  color: #fff;
+  border-bottom: 8px solid var(--purple-dark);
+}
+
+.site-header .site-name {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-header .site-name:visited,
+.site-header .site-name:hover {
+  color: #fff;
+}
+
+.site-header .site-name:hover {
+  text-decoration: underline;
+}
+
+.site-header .site-name:focus {
+  color: #0b0c0c;
+  background-color: var(--focus);
+  outline: 3px solid var(--focus);
+  outline-offset: 0;
+  box-shadow: 0 4px #0b0c0c;
+}
+
+/* Page title / hero: slightly smaller and easier to read */
+.hero {
+  padding: 2rem 0 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.08;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  max-width: 950px;
+}
+
+@media (max-width: 600px) {
+  .site-header .site-name {
+    font-size: 1.15rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.85rem, 10vw, 2.4rem);
+  }
+}
+
