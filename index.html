@@ -1,1150 +1,228 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>The Unofficial Disability Guide to Trinity College Dublin</title>
+
     <meta
-      content="A student-led guide to disability support, access, student life and belonging at Trinity College Dublin."
       name="description"
+      content="A draft student-led disability guide to Trinity College Dublin. The guide is currently being reviewed."
     />
-    <!-- Bootstrap 5.3.8 via CDN. For a fully offline version, download Bootstrap and replace this link with assets/vendor/bootstrap/css/bootstrap.min.css -->
+
+    <meta name="robots" content="noindex, nofollow" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Site styles -->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <!-- Print stylesheet. Bootstrap 5 does not ship a separate bootstrap-print.min.css, so this file contains project-specific print rules. -->
-    <link
-      href="assets/css/bootstrap-print.min.css"
-      media="print"
-      rel="stylesheet"
-    />
+
+    <style>
+      :root {
+        --purple: #81358a;
+        --purple-dark: #5f2468;
+        --text: #0b0c0c;
+        --muted: #505a5f;
+        --border: #b1b4b6;
+        --light: #f3f2f1;
+        --focus: #ffdd00;
+        --link: #1d70b8;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        line-height: 1.55;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-120%);
+        background: var(--focus);
+        color: #000;
+        padding: 0.75rem 1rem;
+        z-index: 10000;
+        font-weight: 700;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+        outline: 3px solid #000;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration-thickness: 0.12em;
+        text-underline-offset: 0.15em;
+      }
+
+      a:hover {
+        color: #003078;
+      }
+
+      a:focus {
+        outline: 3px solid var(--focus);
+        outline-offset: 0;
+        box-shadow:
+          0 -2px var(--focus),
+          0 4px #0b0c0c;
+      }
+
+      .site-header {
+        background: var(--purple);
+        color: #fff;
+        border-bottom: 8px solid var(--purple-dark);
+      }
+
+      .site-name {
+        display: inline-block;
+        padding: 1rem 0;
+        color: #fff;
+        font-size: 1.35rem;
+        line-height: 1.25;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .site-name:hover,
+      .site-name:visited {
+        color: #fff;
+      }
+
+      .site-name:focus {
+        color: #0b0c0c;
+        background-color: var(--focus);
+        outline: 3px solid var(--focus);
+        outline-offset: 0;
+        box-shadow: 0 4px #0b0c0c;
+      }
+
+      main {
+        padding: 3rem 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.25rem);
+        line-height: 1.1;
+        font-weight: 800;
+        max-width: 900px;
+        margin-bottom: 1rem;
+      }
+
+      .lede {
+        font-size: 1.35rem;
+        line-height: 1.45;
+        max-width: 820px;
+      }
+
+      .status-box {
+        border-left: 8px solid var(--purple);
+        background: var(--light);
+        padding: 1.25rem;
+        margin: 2rem 0;
+        max-width: 850px;
+      }
+
+      .status-box p:last-child {
+        margin-bottom: 0;
+      }
+
+      .info-panel {
+        border-top: 4px solid var(--purple);
+        padding-top: 1.25rem;
+        margin-top: 2.5rem;
+        max-width: 850px;
+      }
+
+      .site-footer {
+        border-top: 1px solid var(--border);
+        padding: 1.5rem 0;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+    </style>
   </head>
+
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
+
     <header class="site-header">
       <div class="container">
-        <a
-          aria-label="The Unofficial Disability Guide home"
-          class="site-name"
-          href="./"
-          >The Unofficial Disability Guide</a
-        >
+        <a class="site-name" href="./"> The Unofficial Disability Guide </a>
       </div>
     </header>
-    <div class="phase-banner">
-      <div class="container">
-        <strong class="phase-tag">Draft</strong>
-        <span
-          >This guide is a draft and will grow through student feedback.</span
-        >
-      </div>
-    </div>
+
     <main id="main">
-      <section class="hero" id="top">
-        <div class="container">
-          <h1 id="page-title">
-            The Unofficial Disability Guide to Trinity College Dublin
-          </h1>
-          <p class="lede">
-            By students with disabilities, for students with disabilities.
+      <div class="container">
+        <h1>The Unofficial Disability Guide to Trinity College Dublin</h1>
+
+        <p class="lede">
+          A draft student-led guide by disabled and neurodivergent students, for
+          disabled and neurodivergent students.
+        </p>
+
+        <div class="status-box">
+          <p>
+            This draft guide is currently paused while it is being reviewed and
+            considered.
           </p>
-          <p class="lede">
-            Part student-life handbook and part honest best friend.
+
+          <p>
+            The website was created as an example of how an unofficial student
+            disability guide for Trinity College Dublin could potentially look
+            and work in practice.
           </p>
-          <figure class="hero-image">
-            <img
-              alt="Illustrated banner showing a dark blue silhouette of the Trinity Campanile."
-              src="assets/images/guide_banner.png"
-            />
-            <figcaption>
-              Illustration of the Trinity Campanile with disabled students
-              represented as part of campus life and belonging.
-            </figcaption>
-          </figure>
         </div>
-      </section>
-      <div class="container page-layout">
-        <nav aria-labelledby="contents-heading" class="contents">
-          <h2 id="contents-heading">Contents</h2>
-          <ol>
-            <li><a href="#welcome">Welcome</a></li>
-            <li><a href="#transition">Transitioning to University</a></li>
-            <li><a href="#contacts">Key Trinity Contacts</a></li>
-            <li><a href="#fact">Disability Fact of the Week</a></li>
-            <li><a href="#start">Start here</a></li>
-            <li><a href="#support">Practical Support at Trinity</a></li>
-            <li><a href="#student-life">Everyday student life</a></li>
-            <li><a href="#campus">Campus access and sensory wellbeing</a></li>
 
-            <li><a href="#community">Community and belonging</a></li>
-            <li>
-              <a href="#campus-pharmacy"
-                >A campus pharmacy: why it could matter</a
-              >
-            </li>
-            <li><a href="#wrong">When something goes wrong</a></li>
-            <li>
-              <a href="#featured-story"
-                >Featured story: Neuro-Sensory Photography</a
-              >
-            </li>
-            <li><a href="#feedback">Help shape this guide</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-          </ol>
-        </nav>
-        <div class="guide-content">
-          <section aria-labelledby="welcome-heading" id="welcome">
-            <h2 id="welcome-heading">Welcome</h2>
-            <p>
-              The Unofficial Disability Guide brings together practical
-              information, student knowledge, resources and tips for students
-              with disabilities at Trinity College Dublin.
-            </p>
-            <p>
-              This guide does not replace official Trinity policy or advice, but
-              it can help you know where to start, what to ask, and where to
-              find support.
-            </p>
-            <p>
-              Created by students with disabilities, for students with
-              disabilities, this guide is produced in association with Trinity
-              disAbility Service, Trinity Ability Co_op and DUNeS.
-            </p>
-            <div class="inset-text">
-              <h3>This guide is for you</h3>
-              <p>
-                It is for anyone with any type of disability, including visible,
-                invisible, physical, sensory, neurodivergent, mental health,
-                chronic illness, fluctuating, temporary, diagnosed or
-                undiagnosed disabilities.
-              </p>
-            </div>
-            <h3>Why this guide exists</h3>
-            <p>
-              Studying with a disability can sometimes feel confusing, tiring or
-              lonely. Information can be spread across different webpages,
-              offices, systems and people. This guide tries to bring some of
-              that information together in one place, using clear language and
-              student experience.
-            </p>
-          </section>
-          <!-- Transitioning to University -->
-          <section aria-labelledby="transition-heading" id="transition">
-            <h2 id="transition-heading">Transitioning to University</h2>
+        <section class="info-panel" aria-labelledby="support-heading">
+          <h2 id="support-heading">Looking for official support?</h2>
 
-            <p>
-              Starting university can be exciting, but it can also be
-              overwhelming. There may be new buildings, new people, new
-              routines, new systems and lots of information to take in.
-            </p>
+          <p>
+            For official information about disability-related support at
+            Trinity, please visit Trinity disAbility Service:
+          </p>
 
-            <p>
-              For disabled and neurodivergent students, transition can also mean
-              working out access, energy, sensory load, supports,
-              accommodations, disclosure, travel, food, rest, and how to ask for
-              help before things become too much.
-            </p>
-
-            <div class="inset-text">
-              <p>
-                You do not have to do everything at once. Transition can happen
-                slowly, over days, weeks or months.
-              </p>
-            </div>
-
-            <div
-              class="accordion transition-accordion"
-              id="transitionAccordion"
+          <p>
+            <a
+              href="https://www.tcd.ie/disability/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="transition-before-heading">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#transition-before"
-                    aria-expanded="true"
-                    aria-controls="transition-before"
-                  >
-                    Before you arrive
-                  </button>
-                </h3>
+              Trinity disAbility Service
+              <span class="visually-hidden"> opens in a new window</span>
+            </a>
+          </p>
+        </section>
 
-                <div
-                  id="transition-before"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="transition-before-heading"
-                  data-bs-parent="#transitionAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        Contact Trinity disAbility Service if you think you may
-                        need disability-related support or reasonable
-                        accommodations.
-                      </li>
-                      <li>
-                        Ask what information or documentation may be useful, but
-                        do not wait until everything is perfect before making
-                        contact.
-                      </li>
-                      <li>
-                        Check whether you may need support around exams,
-                        deadlines, accessible learning materials, assistive
-                        technology, captions, note-taking, placements, labs,
-                        attendance, or sensory access.
-                      </li>
-                      <li>
-                        Look at your timetable when it becomes available and
-                        check where classes are located.
-                      </li>
-                      <li>
-                        Visit campus before term starts if you can, especially
-                        to check routes, lifts, ramps, toilets, quieter spaces,
-                        food options or travel time between buildings.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+        <section class="info-panel" aria-labelledby="note-heading">
+          <h2 id="note-heading">About this draft</h2>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="transition-campus-heading">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#transition-campus"
-                    aria-expanded="false"
-                    aria-controls="transition-campus"
-                  >
-                    What to check on campus
-                  </button>
-                </h3>
+          <p>
+            This project was developed as a possible student-led resource to
+            bring together practical information, student experience, access
+            tips, community, and support in one place.
+          </p>
 
-                <div
-                  id="transition-campus"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="transition-campus-heading"
-                  data-bs-parent="#transitionAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Where is my main teaching building?</li>
-                      <li>Is there a step-free entrance?</li>
-                      <li>
-                        Are there lifts, ramps or cobbled areas on my route?
-                      </li>
-                      <li>Where are the nearest accessible toilets?</li>
-                      <li>Where can I sit if I need to rest?</li>
-                      <li>Where can I go if I feel overwhelmed?</li>
-                      <li>
-                        Are there quieter cafés, libraries or outdoor spaces?
-                      </li>
-                      <li>
-                        What is my backup plan if a lift is broken, a route is
-                        blocked, or I am having a difficult day?
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="transition-support-heading">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#transition-support"
-                    aria-expanded="false"
-                    aria-controls="transition-support"
-                  >
-                    Getting support in place
-                  </button>
-                </h3>
-
-                <div
-                  id="transition-support"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="transition-support-heading"
-                  data-bs-parent="#transitionAccordion"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Support at university may work differently from school.
-                      You may need to contact the relevant service, explain what
-                      barriers you are facing, and ask for accommodations or
-                      adjustments.
-                    </p>
-
-                    <p>You do not need perfect wording. You can start with:</p>
-
-                    <blockquote class="example-message">
-                      <p>
-                        “I am starting at Trinity and I would like advice about
-                        disability-related support and reasonable
-                        accommodations. Could you please let me know the best
-                        next step?”
-                      </p>
-                    </blockquote>
-
-                    <p>
-                      If you are not sure what you need, you can say that too:
-                    </p>
-
-                    <blockquote class="example-message">
-                      <p>
-                        “I am not fully sure what support I need yet, but I am
-                        finding the transition to university difficult and would
-                        like to talk through possible options.”
-                      </p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="transition-weeks-heading">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#transition-weeks"
-                    aria-expanded="false"
-                    aria-controls="transition-weeks"
-                  >
-                    First semester checklist
-                  </button>
-                </h3>
-
-                <div
-                  id="transition-weeks"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="transition-weeks-heading"
-                  data-bs-parent="#transitionAccordion"
-                >
-                  <div class="accordion-body">
-                    <h4>Week 1</h4>
-                    <ul>
-                      <li>
-                        Focus on finding your way, not doing everything
-                        perfectly.
-                      </li>
-                      <li>Check your routes to classes.</li>
-                      <li>Find one quiet or calmer place on campus.</li>
-                      <li>
-                        Ask for help early if something is not accessible.
-                      </li>
-                    </ul>
-
-                    <h4>Weeks 2–3</h4>
-                    <ul>
-                      <li>Review what is working and what is not.</li>
-                      <li>Check whether your accommodations are in place.</li>
-                      <li>
-                        Notice patterns around fatigue, sensory overload, travel
-                        stress, pain, anxiety, concentration or executive
-                        functioning.
-                      </li>
-                    </ul>
-
-                    <h4>Weeks 4–6</h4>
-                    <ul>
-                      <li>
-                        Think about study systems that actually work for you.
-                      </li>
-                      <li>
-                        Ask about accessible notes, recordings, captions,
-                        reading formats or assistive technology if needed.
-                      </li>
-                      <li>
-                        Make contact with your tutor, course office or relevant
-                        support if workload is building up.
-                      </li>
-                    </ul>
-
-                    <h4>Weeks 7–12</h4>
-                    <ul>
-                      <li>
-                        Ask about exam accommodations, deadlines or academic
-                        support.
-                      </li>
-                      <li>
-                        Review your routine around sleep, food, travel, rest,
-                        study, sensory load and social time.
-                      </li>
-                      <li>Write down what helped and what did not.</li>
-                      <li>
-                        Remember that next semester can be planned differently.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="highlight">
-              <h3>Things to remember</h3>
-              <ul>
-                <li>You can ask before there is a crisis.</li>
-                <li>You do not have to disclose everything to everyone.</li>
-                <li>Support is not a favour.</li>
-                <li>Rest can be part of access.</li>
-                <li>It is okay if transition takes longer than a week.</li>
-              </ul>
-            </div>
-          </section>
-          <section aria-labelledby="contacts-heading" id="contacts">
-            <h2 id="contacts-heading">Key Trinity Contacts</h2>
-            <p>
-              Services and student groups that may be useful when looking for
-              disability-related support, advice, community or information.
-            </p>
-            <div class="contact-list">
-              <article class="contact-item">
-                <h3>Trinity disAbility Service</h3>
-                <p>
-                  Your first point of contact for disability-related support,
-                  advice and reasonable accommodations.
-                </p>
-                <p>
-                  <a
-                    href="https://www.tcd.ie/disability/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >www.tcd.ie/disability
-                    <span class="visually-hidden">
-                      opens in a new window</span
-                    ></a
-                  >
-                </p>
-              </article>
-              <article class="contact-item">
-                <h3>TCD Sense</h3>
-                <p>
-                  A Trinity initiative supporting sensory inclusion by improving
-                  campus spaces, raising sensory awareness, and providing
-                  specialist support for students who experience sensory
-                  barriers.
-                </p>
-                <p>
-                  <a
-                    href="https://www.tcd.ie/disability/disability-service-projects/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >TCD Sense and disAbility Service projects
-                    <span class="visually-hidden">
-                      opens in a new window</span
-                    ></a
-                  >
-                </p>
-              </article>
-              <article class="contact-item">
-                <h3>Trinity Ability Co_op</h3>
-                <p>
-                  A student-led disability advocacy community for disabled
-                  students and allies.
-                </p>
-                <p>
-                  <a
-                    href="https://abilitycoop.wordpress.com/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >Trinity Ability Co_op website
-                    <span class="visually-hidden">
-                      opens in a new window</span
-                    ></a
-                  >
-                </p>
-              </article>
-              <article class="contact-item">
-                <h3>Neurodiversity Society / DUNeS</h3>
-                <p>
-                  A student society exploring neurodiversity, advocacy and
-                  shared experience.
-                </p>
-                <p>
-                  <a
-                    href="https://www.beacons.ai/Neurodiversity"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >Neurodiversity Society / DUNeS link page
-                    <span class="visually-hidden">
-                      opens in a new window</span
-                    ></a
-                  >
-                </p>
-              </article>
-            </div>
-          </section>
-          <section aria-labelledby="fact-heading" id="fact">
-            <h2 id="fact-heading">Disability Fact of the Week</h2>
-            <figure class="fact-graphic">
-              <img
-                alt=""
-                aria-describedby="fact-graphic-caption"
-                class="img-fluid"
-                loading="lazy"
-                src="assets/images/disability-fact-1.png"
-              />
-              <figcaption id="fact-graphic-caption">
-                Graphic version of this week’s disability fact. A text version
-                is provided below.
-              </figcaption>
-            </figure>
-            <div class="highlight">
-              <h3>Disability is not rare.</h3>
-              <p>
-                Disabled students belong in every part of university life —
-                lectures, labs, societies, placements, leadership, sport,
-                creativity and community.
-              </p>
-            </div>
-          </section>
-          <section aria-labelledby="start-heading" id="start">
-            <h2 id="start-heading">Start here: what do you need today?</h2>
-            <div class="question">
-              <h3>I think I might need support</h3>
-              <p>
-                Contact Trinity disAbility Service and ask about registering,
-                getting advice or finding out what supports may be available.
-              </p>
-            </div>
-            <div class="question">
-              <h3>I am already registered</h3>
-              <p>
-                Check what reasonable accommodations, exam supports, learning
-                supports or other arrangements are currently in place for you.
-              </p>
-            </div>
-            <div class="question">
-              <h3>I am struggling with exams, deadlines or workload</h3>
-              <p>
-                Look for advice on extensions, deferrals, exam accommodations,
-                academic support and who to contact before things become
-                unmanageable.
-              </p>
-            </div>
-            <div class="question">
-              <h3>I want to find disabled student community</h3>
-              <p>
-                Look for Trinity Ability Co_op, DUNeS, disability-related
-                events, peer support and ways to connect with other disabled
-                students.
-              </p>
-            </div>
-            <figure class="student-voice">
-              <blockquote>
-                <p>
-                  “Having support in place before things became overwhelming
-                  made a huge difference.”
-                </p>
-              </blockquote>
-              <figcaption>Student voice</figcaption>
-            </figure>
-          </section>
-          <section aria-labelledby="support-heading" id="support">
-            <h2 id="support-heading">Practical Support at Trinity</h2>
-            <p>
-              Practical support may include exam accommodations, assistive
-              technology, accessible learning materials, study strategies,
-              note-taking support, recordings, captions, library supports, quiet
-              spaces, or adjustments to how you access teaching and assessment.
-            </p>
-            <h3>Ask for what you need</h3>
-            <p>
-              Students should not have to make do with arrangements that are
-              unsafe, exhausting, inaccessible or only barely manageable.
-            </p>
-            <h3>Academic life and accommodations</h3>
-            <ul>
-              <li>Lectures, tutorials and labs</li>
-              <li>Exams, deadlines and workload</li>
-              <li>Accessible learning materials</li>
-              <li>Assistive technology and library support</li>
-            </ul>
-          </section>
-          <section aria-labelledby="student-life-heading" id="student-life">
-            <h2 id="student-life-heading">Everyday student life</h2>
-            <ul class="plain-list">
-              <li>
-                <strong>Eating on campus:</strong> find quieter times and
-                accessible spaces.
-              </li>
-              <li>
-                <strong>Going to events:</strong> check step-free routes,
-                seating, lighting, noise, quiet space, captions, ISL and online
-                options.
-              </li>
-              <li>
-                <strong>Student accommodation:</strong> ask for what you need
-                around access, lifts, bathrooms, kitchens, quietness and safe
-                routes.
-              </li>
-              <li>
-                <strong>Freshers’ Week:</strong> planning breaks and
-                alternatives is part of access.
-              </li>
-            </ul>
-          </section>
-          <section aria-labelledby="campus-heading" id="campus">
-            <h2 id="campus-heading">Campus access and sensory wellbeing</h2>
-            <h3>Getting around Trinity</h3>
-            <p>
-              Check accessible entrances, routes, lifts, ramps, cobbles,
-              toilets, seating, room layout and time between classes before term
-              begins where possible.
-            </p>
-            <h3>Sensory overload</h3>
-            <p>
-              Noise, crosstalk, lighting, crowds, smells or unpredictable spaces
-              can make participation harder.
-            </p>
-            <h3>Energy and pacing</h3>
-            <p>
-              Fatigue, pain, anxiety and executive functioning can affect how
-              much is possible in a day. Breaks are not failure.
-            </p>
-          </section>
-          <section aria-labelledby="community-heading" id="community">
-            <h2 id="community-heading">
-              Student life, community and belonging
-            </h2>
-            <p>
-              Disabled students should have access to friendship, creativity,
-              societies, events, leadership, rest, joy and community.
-            </p>
-            <h3>Things we wish we knew sooner</h3>
-            <ul>
-              <li>You can ask early.</li>
-              <li>Support is not a favour.</li>
-              <li>Your needs may change.</li>
-              <li>You are not the only one.</li>
-            </ul>
-          </section>
-          <!-- TCD Pharamacy -->
-          <!-- A campus pharmacy: why it could matter -->
-          <section
-            id="campus-pharmacy"
-            aria-labelledby="campus-pharmacy-heading"
-          >
-            <h2 id="campus-pharmacy-heading">
-              A campus pharmacy: why it could matter
-            </h2>
-
-            <p>
-              Access to medication, health advice and everyday pharmacy support
-              can be an important part of student life. For disabled,
-              neurodivergent, chronically ill, mental health, sensory-sensitive,
-              mobility disabled, Deaf or visually impaired students, a pharmacy
-              on or very near campus could make a real difference.
-            </p>
-
-            <p>
-              This is not only about convenience. It is about reducing the extra
-              time, energy and planning that some students need just to access
-              basic health supports during the college day.
-            </p>
-
-            <div
-              class="accordion campus-pharmacy-accordion"
-              id="campusPharmacyAccordion"
-            >
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="pharmacy-benefits-heading">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#pharmacy-benefits"
-                    aria-expanded="true"
-                    aria-controls="pharmacy-benefits"
-                  >
-                    Why this could help disabled students
-                  </button>
-                </h3>
-
-                <div
-                  id="pharmacy-benefits"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="pharmacy-benefits-heading"
-                  data-bs-parent="#campusPharmacyAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        Students may need regular prescriptions during the
-                        college day.
-                      </li>
-                      <li>
-                        Some students may find it difficult to travel off campus
-                        when unwell, fatigued, anxious or in pain.
-                      </li>
-                      <li>
-                        Medication routines can be affected by long days,
-                        placements, labs, exams or commuting.
-                      </li>
-                      <li>
-                        A nearby pharmacy could reduce stress around forgotten,
-                        delayed or urgent medication needs.
-                      </li>
-                      <li>
-                        It could support students who need quiet, predictable
-                        and accessible health-related services.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="pharmacy-access-heading">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#pharmacy-access"
-                    aria-expanded="false"
-                    aria-controls="pharmacy-access"
-                  >
-                    Access and inclusion considerations
-                  </button>
-                </h3>
-
-                <div
-                  id="pharmacy-access"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="pharmacy-access-heading"
-                  data-bs-parent="#campusPharmacyAccordion"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      If Trinity were to explore a campus pharmacy or pharmacy
-                      partnership, accessibility should be built in from the
-                      beginning.
-                    </p>
-
-                    <ul>
-                      <li>
-                        Step-free entrance and wheelchair-accessible counter
-                        space.
-                      </li>
-                      <li>Clear signage and plain-language information.</li>
-                      <li>
-                        Quiet waiting option or lower-sensory collection point.
-                      </li>
-                      <li>
-                        Online prescription ordering or collection information
-                        where possible.
-                      </li>
-                      <li>
-                        Respectful, confidential and disability-aware
-                        communication.
-                      </li>
-                      <li>
-                        Accessible opening hours that consider lectures, labs,
-                        exams and commuting students.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="pharmacy-student-life-heading">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#pharmacy-student-life"
-                    aria-expanded="false"
-                    aria-controls="pharmacy-student-life"
-                  >
-                    A small support with a large impact
-                  </button>
-                </h3>
-
-                <div
-                  id="pharmacy-student-life"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="pharmacy-student-life-heading"
-                  data-bs-parent="#campusPharmacyAccordion"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      For some students, a pharmacy close to where they study
-                      could mean less time missed, less travel stress, fewer
-                      difficult decisions, and more confidence that health needs
-                      can be managed during the college day.
-                    </p>
-
-                    <p>
-                      A campus pharmacy would not replace medical, counselling
-                      or disability supports, but it could form part of a more
-                      accessible student health and wellbeing environment.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="highlight">
-              <h3>Student guide note</h3>
-              <p>
-                If medication, health routines or pharmacy access affect your
-                student life, it may be useful to plan ahead: check nearby
-                pharmacies, opening hours, prescription arrangements, and what
-                to do if you need support during the college day.
-              </p>
-            </div>
-          </section>
-          <section aria-labelledby="wrong-heading" id="wrong">
-            <h2 id="wrong-heading">When something goes wrong</h2>
-            <p>
-              Sometimes access arrangements do not work, information is unclear,
-              or students experience discrimination, exclusion or barriers to
-              participation. You do not have to deal with this alone.
-            </p>
-            <p>
-              Keep a note of what happened, who was involved, when it happened,
-              and what support you need. You can contact the disAbility Service,
-              your tutor, the TCD Students' Union or another relevant support
-              service for advice.
-            </p>
-          </section>
-          <!-- Featured Story -->
-          <section aria-labelledby="neuro-sensory-heading" id="featured-story">
-            <h2 class="featured-heading" id="neuro-sensory-heading">
-              <span class="section-label">Featured story</span>
-              Neuro-Sensory Photography
-            </h2>
-            <p class="featured-intro">
-              Neuro-Sensory Photography is a way of taking photos that shows how
-              a place, object, or moment feels through the senses.
-            </p>
-            <p>
-              Most photos show what something looks like. Neuro-Sensory
-              Photography asks a different question:
-              <strong>What does this feel like to experience?</strong>
-            </p>
-            <p>
-              For neurodivergent people, such as autistic people, ADHD people,
-              dyslexic people, or people with sensory sensitivities, these
-              details can be very important.
-            </p>
-            <button
-              aria-controls="neuro-sensory-full-text"
-              aria-expanded="false"
-              class="btn btn-outline-dark featured-toggle"
-              data-bs-target="#neuro-sensory-full-text"
-              data-bs-toggle="collapse"
-              type="button"
-            >
-              Read the full Neuro-Sensory Photography feature
-            </button>
-            <div
-              class="collapse featured-collapse"
-              id="neuro-sensory-full-text"
-            >
-              <div class="featured-story-text">
-                <p>
-                  Neuro-Sensory Photography is a creative and research-based
-                  photographic approach that explores how neurodivergent people
-                  experience the world through sensory perception.
-                </p>
-                <p>
-                  Rather than using photography only to document people, places,
-                  or events as they appear visually, this approach uses the
-                  camera to communicate how environments are felt, processed,
-                  endured, enjoyed, resisted, or remembered through the body and
-                  senses.
-                </p>
-                <p>
-                  Drawing inspiration from sensory ethnography, Neuro-Sensory
-                  Photography shifts attention away from purely textual
-                  description and toward lived sensory experience. It asks how
-                  light, sound, texture, movement, colour, pattern, distance,
-                  crowding, temperature, smell, and spatial layout shape a
-                  person’s experience of a place.
-                </p>
-                <p>
-                  For neurodivergent individuals, these sensory details are
-                  often not background information; they can be central to
-                  safety, comfort, overwhelm, focus, identity, memory, and
-                  belonging.
-                </p>
-                <h3>What kinds of sensory experiences can it show?</h3>
-                <p>This can include things like:</p>
-                <ul>
-                  <li>bright lights</li>
-                  <li>loud sounds</li>
-                  <li>busy patterns</li>
-                  <li>soft textures</li>
-                  <li>crowded spaces</li>
-                  <li>quiet corners</li>
-                  <li>strong smells</li>
-                  <li>movement</li>
-                  <li>colour</li>
-                  <li>calm or overwhelming places</li>
-                </ul>
-                <p>
-                  A place that looks ordinary to one person might feel too loud,
-                  too bright, too busy, or uncomfortable to someone else.
-                  Another place might feel peaceful, safe, calming, or easy to
-                  focus in.
-                </p>
-                <p>
-                  Neuro-Sensory Photography helps people show these feelings
-                  through images. The photo does not have to be perfect. The
-                  most important thing is that it shows a sensory feeling or
-                  experience.
-                </p>
-                <p>A student, photographer, or participant could use:</p>
-                <ul>
-                  <li>close-up photos to show texture</li>
-                  <li>blurry photos to show movement or stress</li>
-                  <li>repeated patterns to show visual busyness</li>
-                  <li>shadows or soft light to show calm</li>
-                  <li>unusual angles to show confusion, pressure, or focus</li>
-                  <li>colours to show mood or feeling</li>
-                </ul>
-                <p>
-                  A bright corridor might be photographed as harsh and piercing.
-                  A quiet garden might be shown through softness, texture, and
-                  breathing space. A crowded room might be represented through
-                  visual noise, compression, and fragmented attention. A
-                  familiar object might be photographed as a point of
-                  regulation, comfort, or grounding.
-                </p>
-                <p>
-                  Neuro-Sensory Photography is not just about taking a nice
-                  picture. It is about using photography to help others
-                  understand what a place feels like through the body and
-                  senses.
-                </p>
-                <p>
-                  It is not about showing neurodivergent people as subjects to
-                  be observed from the outside. Instead, it centres
-                  neurodivergent perception as a valid and creative way of
-                  knowing the world.
-                </p>
-                <p>
-                  It allows the photographer, participant, or viewer to ask:
-                  What does this place feel like? What sensory details are
-                  usually ignored? What creates calm, distress, focus, joy,
-                  safety, or exclusion? How can photography make invisible
-                  sensory experiences visible?
-                </p>
-                <h3>Simple example</h3>
-                <p>
-                  Imagine a hallway. One student might take a photo of the
-                  hallway when it is crowded and blurry to show that it feels
-                  noisy, rushed, and overwhelming. Another student might take a
-                  close-up photo of a quiet corner, a soft chair, or sunlight on
-                  the wall to show a place that feels calm and safe.
-                </p>
-                <h3>Class Assignment: My Sensory World</h3>
-                <p>
-                  For this assignment, choose one place in your college home,
-                  garden, street, or community. Think about how that place feels
-                  through your senses.
-                </p>
-                <p><strong>Ask yourself:</strong></p>
-                <ul>
-                  <li>
-                    <strong>What can I see?</strong><br />
-                    Is it bright, dark, colourful, plain, messy, or busy?
-                  </li>
-                  <li>
-                    <strong>What can I hear?</strong><br />
-                    Is it quiet, noisy, echoey, calm, or distracting?
-                  </li>
-                  <li>
-                    <strong>What can I feel?</strong><br />
-                    Are there soft, rough, cold, warm, smooth, or uncomfortable
-                    textures?
-                  </li>
-                  <li>
-                    <strong>How does the place make me feel?</strong><br />
-                    Does it feel calm, safe, stressful, exciting, confusing,
-                    peaceful, or overwhelming?
-                  </li>
-                </ul>
-                <p>
-                  Then take 3 to 5 photographs that show the sensory feeling of
-                  that place.
-                </p>
-                <p>You could choose:</p>
-                <ul>
-                  <li>a busy classroom</li>
-                  <li>a quiet reading corner</li>
-                  <li>a location on campus</li>
-                  <li>a corridor</li>
-                  <li>a lunch area</li>
-                  <li>a tree, bench, window, wall, or doorway</li>
-                  <li>your bedroom</li>
-                  <li>a favourite calming object</li>
-                </ul>
-                <p>
-                  After taking your photos, choose your best one and write a
-                  short paragraph about it.
-                </p>
-                <p>Your paragraph could answer:</p>
-                <ol>
-                  <li>What is the photo of?</li>
-                  <li>What sensory feeling are you trying to show?</li>
-                  <li>What senses are involved?</li>
-                  <li>Why did you choose this photo?</li>
-                  <li>What might this photo help other people understand?</li>
-                </ol>
-                <h3>Example student response</h3>
-                <p>
-                  My photo is of a crowded hallway after class. I took the photo
-                  slightly blurry because the hallway feels fast, loud, and
-                  confusing when lots of people are moving at the same time. The
-                  bright lights and the noise make it hard to think clearly. I
-                  wanted my photo to show that a hallway is not just a place to
-                  walk through. For some people, it can feel overwhelming. This
-                  photo might help others understand why quiet spaces and calmer
-                  routes can be important in college.
-                </p>
-                <h3>Another example</h3>
-                <p>
-                  My photo is of a small corner near a window. The light is
-                  soft, and the wall is plain. I chose this photo because this
-                  space feels calm and quiet. It gives me a break from noise and
-                  busy classrooms. The photo shows that simple spaces can help
-                  people feel safe, focused, and comfortable.
-                </p>
-                <p>
-                  As a practice, Neuro-Sensory Photography could be used in art,
-                  disability studies, accessibility research, campus design,
-                  mental health, education, and community storytelling.
-                </p>
-                <p>
-                  It could help communicate why some environments are
-                  overwhelming, why others feel safe, and how sensory experience
-                  should be taken seriously in the design of public spaces.
-                </p>
-                <p>
-                  It could also become a powerful form of self-expression,
-                  allowing neurodivergent people to represent their own sensory
-                  worlds in ways that are poetic, political, embodied, and
-                  deeply personal.
-                </p>
-                <h3>Would you like to share your Neuro-Sensory Photography?</h3>
-                <p>
-                  Students are invited to explore Neuro-Sensory Photography and
-                  create their own images using a phone, tablet, or camera. You
-                  do not need professional equipment. A simple photo taken on
-                  your phone can be enough if it helps show what a place,
-                  object, or moment feels like through the senses.
-                </p>
-                <p>
-                  If you would like to find out more about how students can
-                  submit their photography, please contact Trinity disAbility
-                  Service at
-                  <a href="mailto:askds@tcd.ie">askds@tcd.ie</a>.
-                </p>
-                <p>
-                  Submitted photographs could help start conversations about
-                  sensory experience, neurodivergent perspectives,
-                  accessibility, calm spaces, overwhelming environments, and how
-                  colleges, and communities can become more inclusive.
-                </p>
-                <div class="featured-quote">
-                  <p>
-                    <strong>
-                      At its heart, Neuro-Sensory Photography is about moving
-                      beyond the question “What does this look like?” and asking
-                      instead: “What does this feel like to experience?”
-                    </strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Feedback form - Help us improve this guide -->
-          <section aria-labelledby="feedback-heading" id="feedback">
-            <h2 id="feedback-heading">Help shape this guide</h2>
-            <p>
-              This is a living student guide. We would love to hear what
-              disabled and neurodivergent students would like to see included,
-              corrected, expanded, or contributed.
-            </p>
-            <p>
-              You can share a tip, access issue, student experience, useful
-              resource, photo idea, or featured story suggestion.
-            </p>
-            <figure class="feedback-qr">
-              <img
-                alt="QR code linking to the feedback form for the Unofficial Disability Guide to Trinity College Dublin."
-                class="img-fluid"
-                loading="lazy"
-                src="assets/images/disability-guide-feedback-qr-code.png"
-              />
-              <figcaption>
-                Scan the QR code to give feedback on the guide.
-              </figcaption>
-            </figure>
-            <p>
-              <a
-                class="button-link"
-                href="https://forms.cloud.microsoft/e/qi9z52zFrv"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Give feedback on the guide
-                <span class="visually-hidden"> opens Microsoft Forms</span>
-              </a>
-            </p>
-          </section>
-          <section aria-labelledby="conclusion-heading" id="conclusion">
-            <h2 id="conclusion-heading">Conclusion</h2>
-            <p>
-              This Trinity guide brings together student experience, practical
-              information, lived knowledge and links to official supports in one
-              accessible place.
-            </p>
-            <p>
-              <strong
-                >Support. Belonging. Clear information. You are not
-                alone.</strong
-              >
-            </p>
-          </section>
-        </div>
+          <p>Support. Belonging. Clear information. You are not alone.</p>
+        </section>
       </div>
     </main>
-    <div class="container">
-      <p class="back-to-top">
-        <a class="btn btn-outline-dark" href="#top">
-          Back to top
-          <span aria-hidden="true">↑</span>
-        </a>
-      </p>
-    </div>
+
     <footer class="site-footer">
       <div class="container">
         <p>
-          <strong
-            >The Unofficial Disability Guide to Trinity College Dublin</strong
-          >
-        </p>
-        <p>
-          By students with disabilities, for students with disabilities, in
-          collaboration with Trinity disAbility Service, Trinity Ability Co_op
-          and DUNeS.
+          Draft student-led project. This page is not an official Trinity
+          College Dublin webpage.
         </p>
       </div>
     </footer>
-    <!-- Bootstrap JavaScript bundle via CDN. This page does not require Bootstrap JS components, but the script is included for future use. -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
